@@ -1,5 +1,5 @@
 const getMovies = async () => {
-  const res = await fetch("http://ghibliapi.vercel.app/films");
+  const res = await fetch("https://ghibliapi.vercel.app/films");
   const dataJSON = await res.json();
   printMovies(dataJSON);
 };
